@@ -1,0 +1,40 @@
+
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.locationBanner {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: rgb(243, 243, 243);
+    font-size: 19px;
+    position: relative;
+  
+    &__icon {
+      margin-right: 5px;
+    }
+  
+    &__text {
+      margin-left: 5px;
+      font-family: 'Roboto';
+      font-weight: 700;
+    }
+  }
+  
+  .FirstBanner {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  
+    &__title {
+      margin: 0;
+    }
+  
+    &__subtitle {
+      font-weight: 300;
+      margin: 1.5rem 0;
+    }
+  }
