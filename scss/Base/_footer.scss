@@ -1,0 +1,37 @@
+.footer {
+    background-color: $footerBackground;
+
+    .footerDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    &__logo {
+        color: white;
+        font-family: "Shrikhand";
+        margin: 0;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    &__icon {
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    &__items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__link {
+        margin: 10px;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+    }
+}
