@@ -75,12 +75,12 @@ body, html {
   .card__newBadge {
     background-color: #99E2D0;
     color: #1b6150;
-    padding: 10px;
+    position: absolute;
     border-radius: 3px;
     top: 15px;
     right: 10px;
-    position: absolute; }
-  .card__btn {
+    padding: 10px; }
+  .card__likeButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +88,7 @@ body, html {
     width: 35px;
     background-color: transparent;
     border: transparent 0px solid;
-    padding: 0; }
+    margin: 10px; }
   .card__labels {
     flex: 1; }
   .card__title {
@@ -98,7 +98,127 @@ body, html {
     margin: 0;
     font-weight: 100; }
   .card__like {
-    color: #9356DC; }
+    color: black; }
+
+.header {
+  align-items: center; }
+  .header__arrow {
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black; }
+
+.imgCoverRestaurant {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover; }
+
+.menuBox {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  position: relative; }
+  .menu__header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .menu__title {
+    font-family: "Shrikhand"; }
+  .menu__btn {
+    padding: 0;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    cursor: pointer; }
+  .menu__likeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+    width: 35px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0; }
+  .menu__like {
+    color: black; }
+
+.restaurantMenu {
+  display: flex;
+  flex-direction: column; }
+
+.partMenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem; }
+  .partMenu__title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 300; }
+    .partMenu__title::after {
+      content: "";
+      width: 3rem;
+      height: 0.25rem;
+      background-color: #99E2D0;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+
+.menuBoxItem {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%; }
+  .menuBoxItem__header {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1; }
+  .menuBoxItem__title {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 16px; }
+  .menuBoxItem__description {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 14px; }
+  .menuBoxItem__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 16px; }
 
 .header {
   padding: 1rem;

@@ -99,16 +99,16 @@ body, html {
     &__newBadge {
       background-color: $greenLight;
       color: darken($greenLight, 50%);
+      position: absolute;
 
-      padding: 10px;
       border-radius: 3px;
       top: 15px;
       right: 10px;
-      position: absolute;
+      padding: 10px;
 
     }
   
-    &__btn {
+    &__likeButton{
       display:flex;
       align-items:center;
       justify-content:center;
@@ -116,7 +116,7 @@ body, html {
       width: 35px;
       background-color: transparent;
       border: transparent 0px solid;
-      padding: 0;
+      margin: 10px;
     }
     
     &__labels {
@@ -134,6 +134,6 @@ body, html {
     }
   
     &__like {
-      color: $purple;
+      color: black;
     }
   }
