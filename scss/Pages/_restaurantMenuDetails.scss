@@ -1,149 +1,165 @@
 .header {
   align-items: center;
-    &__arrow {
-      position: absolute;
-      left: 10px;
-      height: 30px;
-      width: 30px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size: 1.2rem;
-      color: black;
-    }
-  }
-  
-  .imgCoverRestaurant {
-    max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-    object-fit: cover;
-  }
 
-  .menuBox {
-    background-color: white;
-    padding: 1rem;
+  &__arrow {
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    width: 30px;
     display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
   }
-  .menu {
+}
 
-    display: flex;
-    flex-direction: column;
+.imgCoverRestaurant {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menuBox {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.menu {
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+
+  &__header {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
+  &__title {
+    font-family: "Shrikhand";
+  }
+
+  &__btn {
+    padding: 0;
     position: relative;
-  
-    &__header {
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    &__title {
-      font-family: "Shrikhand";
-    }
-  
-    &__btn {
-      padding: 0;
-      position: relative;
-      height: 10px;
-      width: 10px;
-      cursor: pointer;
-    }
-  
-    &__likeButton {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height: 5px;
-      width: 35px;
-      background-color: transparent;
-      border: transparent 0px solid;
-      padding: 0;
-    }
-    &__like {
-      color: black;
-    }
-  }
-  
-  .restaurantMenu {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .partMenu {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0 1rem;
-  
-    &__title {
-      text-transform: uppercase;
-      position: relative;
-      padding-bottom: 10px;
-      font-weight: 300;
-  
-      &::after {
-        content: "";
-        width: 3rem;
-        height: 0.25rem;
-        background-color: $greenLight;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-      }
-    }
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
   }
 
-  .menuBoxItem {
-    background-color: white;
-    padding: 1rem;
+  &__likeButton {
     display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    max-width: 100%;
-  
-    &__header {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      flex: 1;
-    }
-  
-    &__title {
-      margin: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      font-weight: 700;
-      font-size: 16px;
-    }
-  
-    &__description {
-      margin: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      font-weight: 300;
-      font-size: 14px;
-    }
-  
-    &__price {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      padding-left: 10px;
-      font-weight: 700;
-      font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+    width: 35px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+  }
+
+  &__like {
+    color: black;
+  }
+}
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checked {
+  display: inline-block;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.unchecked {
+  display: none;
+}
+
+.restaurantMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.partMenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+
+  &__title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 300;
+
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 0.25rem;
+      background-color: $greenLight;
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
+}
+
+.menuBoxItem {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+
+  &__header {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__description {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

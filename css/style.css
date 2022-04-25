@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-body, html {
+body,
+html {
   margin: 0;
   font-family: 'Roboto';
   scroll-behavior: smooth; }
@@ -98,7 +99,17 @@ body, html {
     margin: 0;
     font-weight: 100; }
   .card__like {
-    color: black; }
+    color: purple; }
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+  display: none; }
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+  display: inline-block; }
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none; }
 
 .header {
   align-items: center; }
@@ -162,6 +173,16 @@ body, html {
     padding: 0; }
   .menu__like {
     color: black; }
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+  display: none; }
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+  display: inline-block; }
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none; }
 
 .restaurantMenu {
   display: flex;

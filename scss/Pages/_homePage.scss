@@ -1,139 +1,153 @@
-body, html {
+body,
+html {
   margin: 0;
   font-family: 'Roboto';
   scroll-behavior: smooth;
 }
 
 .locationBanner {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background-color: white;
+  font-size: 19px;
+  position: relative;
+
+  &__text {
+    margin-left: 5px;
+    font-weight: 700;
+  }
+
+  &__icon {
+    margin-right: 5px;
+  }
+}
+
+.FirstBanner {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    margin: 20px;
+  }
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 10px;
+
+  &__title {
+    font-weight: 700;
+  }
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    padding: 25px;
-    background-color: white;
-    font-size: 19px;
-    position: relative;
-  
-    &__text {
-      margin-left: 5px;
-      font-weight: 700;
-    }
-
-    &__icon {
-      margin-right: 5px;
-    }
   }
-  
-  .FirstBanner {
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-  
-    &__title {
-      margin: 0;
-    }
-  
-    &__subtitle {
-      font-weight: 300;
-      margin: 20px;
-    }
-  }
+}
 
-  .restaurants {
-    background-color: #f6f6f6;
-    padding: 10px;
-  
-    &__title {
-      font-weight: 700;
-    }
-  }
+.card {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  text-decoration: none;
+  color: black;
 
+  width: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
 
-  .cards {
-    display: flex;
+  box-shadow: 0 0 16px $boxShadow;
+
+  @media screen and (min-width: 992px) {
+    width: 33%;
     flex-direction: column;
-    
-    @media screen and (min-width: 992px){
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  
-  .card {
-    background-color: white;
-    border-radius: 10px;
+
+  &__img {
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    padding: 10px;
     position: relative;
-    text-decoration: none;
-    color: black;
-
-    width: auto;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-
-    box-shadow: 0 0 16px $boxShadow;
-
-    @media screen and (min-width: 992px){
-      width: 33%;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  
-    &__img {
-      height: 180px;
-      width: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      object-fit: cover;
-    }
-  
-    &__body {
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      position: relative;
-    }
-    
-    &__newBadge {
-      background-color: $greenLight;
-      color: darken($greenLight, 50%);
-      position: absolute;
-
-      border-radius: 3px;
-      top: 15px;
-      right: 10px;
-      padding: 10px;
-
-    }
-  
-    &__likeButton{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height: 5px;
-      width: 35px;
-      background-color: transparent;
-      border: transparent 0px solid;
-      margin: 10px;
-    }
-    
-    &__labels {
-      flex: 1;
-    }
-  
-    &__title {
-      margin: 0;
-      margin-bottom: 10px;
-    }
-  
-    &__subtitle {
-      margin: 0;
-      font-weight: 100;
-    }
-  
-    &__like {
-      color: black;
-    }
   }
+
+  &__newBadge {
+    background-color: $greenLight;
+    color: darken($greenLight, 50%);
+    position: absolute;
+
+    border-radius: 3px;
+    top: 15px;
+    right: 10px;
+    padding: 10px;
+
+  }
+
+  &__likeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+    width: 35px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    margin: 10px;
+  }
+
+  &__labels {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 100;
+  }
+
+  &__like {
+    color: purple;
+  }
+}
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checked {
+  display: inline-block;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.unchecked {
+  display: none;
+}
