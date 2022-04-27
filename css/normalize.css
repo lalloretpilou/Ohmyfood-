@@ -25,6 +25,7 @@
   body {
     margin: 0;
     font-family: 'Roboto';
+    animation: fill 2.5s;
   }
   
   /**

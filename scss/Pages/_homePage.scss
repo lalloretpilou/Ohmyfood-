@@ -16,6 +16,10 @@
   }
 }
 
+.loadPage {
+  animation: fill 2.5s;
+}
+
 .FirstBanner {
   padding: 20px;
   text-align: center;
@@ -64,6 +68,8 @@
   margin-bottom: 20px;
 
   box-shadow: 0 0 16px $boxShadow;
+
+  animation: appear 1.5s;
 
   @media screen and (min-width: 992px) {
     width: 33%;
@@ -131,3 +137,4 @@
   margin-right: 15px;
   margin-left: -10px;
 }
+

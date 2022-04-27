@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes appear {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+.delay1 {
+  animation-delay: 1s; }
+
+.delay2 {
+  animation-delay: 3s; }
+
+.delay3 {
+  animation-delay: 4s; }
+
+.delay4 {
+  animation-delay: 6s; }
+
+@keyframes fill {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes invertFill {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
 .locationBanner {
   display: flex;
   justify-content: center;
@@ -11,6 +38,9 @@
     font-weight: 700; }
   .locationBanner__icon {
     margin-right: 5px; }
+
+.loadPage {
+  animation: fill 2.5s; }
 
 .FirstBanner {
   padding: 20px;
@@ -48,7 +78,8 @@
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 20px;
-  box-shadow: 0 0 16px #0000002e; }
+  box-shadow: 0 0 16px #0000002e;
+  animation: appear 1.5s; }
   @media screen and (min-width: 992px) {
     .card {
       width: 33%;
@@ -101,19 +132,19 @@
 .header {
   align-items: center; }
   .header__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 10px;
     height: 30px;
     width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: black; }
 
 .imgCoverRestaurant {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 250px;
   width: 100%;
   object-fit: cover; }
 
@@ -193,6 +224,9 @@
       left: 0;
       bottom: 0; }
 
+.menuBox {
+  animation: appear 1.5s; }
+
 .orderButtonDiv {
   padding: 20px;
   display: flex;
@@ -202,12 +236,12 @@
   background-color: white;
   padding: 1rem;
   display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
-  box-shadow: 0 0 16px #0000002e;
+  border-radius: 15px;
+  margin: 10px;
   overflow: hidden;
   cursor: pointer;
-  max-width: 100%; }
+  max-width: 100%;
+  box-shadow: 0 0 16px #0000002e; }
   .menuBoxItem__header {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -279,6 +313,7 @@
   display: none; }
 
 .fa-gradient {
+  animation: fill 2s;
   background: linear-gradient(275deg, #9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -300,6 +335,7 @@
   transition-property: transform;
   transition-duration: 400ms; }
   .orderButton:hover {
+    animation: invertFill 2s;
     box-shadow: 3px 3px 18px #0000002e;
     transform: scale(1.1); }
 
@@ -318,6 +354,7 @@
   transition-property: transform;
   transition-duration: 400ms; }
   .homeButton:hover {
+    animation: invertFill 2s;
     box-shadow: 3px 3px 18px #0000002e;
     transform: scale(1.1); }
 
