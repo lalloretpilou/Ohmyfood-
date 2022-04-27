@@ -1,0 +1,43 @@
+.orderButton{
+    display: block;
+    text-align: center;
+    @include gradient-color;  
+    color: white;
+    width: 200px;
+    border-radius: 30px;
+    padding: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 3px 3px 16px $locationGreyBanner;
+
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+
+    &:hover {
+      box-shadow: 3px 3px 18px #0000002e;
+      transform: scale(1.10);
+    }
+  }
+
+  .homeButton {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    @include gradient-color;
+    color: white;
+    width: 200px;
+    border-radius: 30px;
+    padding: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 3px 3px 16px $locationGreyBanner;
+
+    transition-property: transform;
+    transition-duration: 400ms;
+
+    &:hover {
+      box-shadow: 3px 3px 18px #0000002e;
+      transform: scale(1.10);
+    }
+  }

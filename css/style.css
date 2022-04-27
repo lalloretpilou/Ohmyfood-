@@ -1,15 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-body,
-html {
-  margin: 0;
-  font-family: 'Roboto';
-  scroll-behavior: smooth; }
-
 .locationBanner {
   display: flex;
   justify-content: center;
   padding: 25px;
-  background-color: white;
+  background-color: #EAEAEA;
   font-size: 19px;
   position: relative; }
   .locationBanner__text {
@@ -21,7 +15,7 @@ html {
 .FirstBanner {
   padding: 20px;
   text-align: center;
-  background-color: white; }
+  background-color: #f6f6f6; }
   .FirstBanner__title {
     margin: 0; }
   .FirstBanner__subtitle {
@@ -75,7 +69,7 @@ html {
     position: relative; }
   .card__newBadge {
     background-color: #99E2D0;
-    color: #1b6150;
+    color: #008766;
     position: absolute;
     border-radius: 3px;
     top: 15px;
@@ -98,18 +92,11 @@ html {
   .card__subtitle {
     margin: 0;
     font-weight: 100; }
-  .card__like {
-    color: purple; }
 
-.custom-checkbox input[type="checkbox"],
-.custom-checkbox .checked {
-  display: none; }
-
-.custom-checkbox input[type="checkbox"]:checked ~ .checked {
-  display: inline-block; }
-
-.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
-  display: none; }
+.fonctionnementDivision {
+  align-items: center;
+  margin-right: 15px;
+  margin-left: -10px; }
 
 .header {
   align-items: center; }
@@ -206,13 +193,18 @@ html {
       left: 0;
       bottom: 0; }
 
+.orderButtonDiv {
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
+
 .menuBoxItem {
   background-color: white;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 16px #0000002e;
   overflow: hidden;
   cursor: pointer;
   max-width: 100%; }
@@ -275,5 +267,101 @@ html {
   .footer__link {
     color: white;
     text-decoration: none; }
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+  display: none; }
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+  display: inline-block; }
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none; }
+
+.fa-gradient {
+  background: linear-gradient(275deg, #9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.orderButton {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(325deg, #9356DC, #FF79DA);
+  color: white;
+  width: 200px;
+  border-radius: 30px;
+  padding: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 3px 3px 16px #EAEAEA;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms; }
+  .orderButton:hover {
+    box-shadow: 3px 3px 18px #0000002e;
+    transform: scale(1.1); }
+
+.homeButton {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(325deg, #9356DC, #FF79DA);
+  color: white;
+  width: 200px;
+  border-radius: 30px;
+  padding: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 3px 3px 16px #EAEAEA;
+  transition-property: transform;
+  transition-duration: 400ms; }
+  .homeButton:hover {
+    box-shadow: 3px 3px 18px #0000002e;
+    transform: scale(1.1); }
+
+.fonctionnement {
+  background-color: #f6f6f6; }
+  .fonctionnement__title {
+    margin: 10px;
+    font-weight: 700; }
+
+.fonctionnement__box {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 16px #EAEAEA;
+  transition-duration: 400ms; }
+  .fonctionnement__box__icon {
+    margin-right: 15px;
+    font-weight: 700;
+    cursor: pointer; }
+  .fonctionnement__box__number {
+    font-size: 14px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: white;
+    background-color: #9356DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -25px;
+    cursor: pointer; }
+  .fonctionnement__box:hover {
+    color: #9356DC;
+    background-color: #f5edff; }
+    .fonctionnement__box:hover p {
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */

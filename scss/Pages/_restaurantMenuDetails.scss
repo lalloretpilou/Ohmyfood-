@@ -120,13 +120,19 @@
   }
 }
 
+.orderButtonDiv {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .menuBoxItem {
   background-color: white;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 16px #0000002e;
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;

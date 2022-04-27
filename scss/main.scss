@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 @import "Utils/variables.scss";
+@import "Utils/animation.scss";
 @import "Pages/homePage.scss";
 @import "Pages/restaurantMenuDetails.scss";
 @import "Layout/header.scss";
-@import "Base/footer.scss";
+@import "Layout/footer.scss";
+@import "Components/likeButton.scss";
+@import "Components/buttonStyle.scss";
+@import "Components/_fonctionnementButton.scss";
