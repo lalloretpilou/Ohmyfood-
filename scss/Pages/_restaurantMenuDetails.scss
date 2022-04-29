@@ -19,9 +19,9 @@
   max-height: 250px;
   width: 100%;
   object-fit: cover;
+  
   @media screen and (min-width: 992px) {
     max-height: 450px;
-    position: sticky
   }
 }
 
@@ -61,8 +61,6 @@
     justify-content: center;
     height: 5px;
     width: 35px;
-    background-color: transparent;
-    border: transparent 0px solid;
     padding: 0;
   }
 
@@ -156,7 +154,7 @@
   &:hover .menuBoxItem__confirmBox {
     opacity: 1;
     margin-right: 0px;
-    transition: all 1s ease;
+    transition-duration: 1s;
   }
 }
 
