@@ -117,6 +117,14 @@
   margin-right: 15px;
   margin-left: -10px; }
 
+@media screen and (min-width: 992px) {
+  .fonctionnementDivision {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+  .fonctionnement__box {
+    width: 30%; } }
 .header {
   align-items: center; }
   .header__arrow {
@@ -135,6 +143,10 @@
   max-height: 250px;
   width: 100%;
   object-fit: cover; }
+  @media screen and (min-width: 992px) {
+    .imgCoverRestaurant {
+      max-height: 450px;
+      position: sticky; } }
 
 .menu {
   display: flex;
@@ -186,7 +198,8 @@
 
 .partMenu {
   max-width: 100%;
-  padding: 10px; }
+  padding: 10px;
+  animation: appear 1.5s; }
   .partMenu__title {
     text-transform: uppercase;
     position: relative;
@@ -201,6 +214,29 @@
       background-color: #99E2D0;
       position: absolute; }
 
+@media screen and (min-width: 992px) {
+  .restaurantMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+  .partMenu {
+    width: 30%;
+    padding: 10px;
+    animation: appear 1.5s; }
+    .partMenu__title {
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 10px;
+      font-weight: 300; }
+      .partMenu__title::after {
+        content: "";
+        width: 49px;
+        height: 5px;
+        bottom: 0px;
+        left: 0px;
+        background-color: #99E2D0;
+        position: absolute; } }
 .menuBox {
   background-color: white;
   display: flex;
@@ -208,7 +244,6 @@
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
-  animation: appear 1.5s;
   max-height: 90px;
   box-shadow: 4px 4px 18px #0000002e;
   margin-bottom: 16px; }
@@ -257,16 +292,22 @@
     font-size: 16px; }
   .menuBoxItem__confirmBox {
     color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70px;
     margin-right: -70px;
     background-color: #99E2D0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     opacity: 0; }
+    .menuBoxItem__confirmBox:hover {
+      background-color: #008766; }
+  .menuBoxItem__confirmIcon {
+    margin-top: 5px; }
+    .menuBoxItem__confirmIcon:hover {
+      color: purple; }
 
 .orderButtonDiv {
   padding: 20px;

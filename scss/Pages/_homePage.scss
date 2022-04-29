@@ -138,3 +138,13 @@
   margin-left: -10px;
 }
 
+@media screen and (min-width: 992px) {
+  .fonctionnementDivision {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fonctionnement__box {
+    width: 30%;
+  }
+}
