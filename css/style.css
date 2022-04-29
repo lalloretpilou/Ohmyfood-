@@ -4,18 +4,6 @@
     transform: scale(0); }
   100% {
     transform: scale(1); } }
-.delay1 {
-  animation-delay: 1s; }
-
-.delay2 {
-  animation-delay: 3s; }
-
-.delay3 {
-  animation-delay: 4s; }
-
-.delay4 {
-  animation-delay: 6s; }
-
 @keyframes fill {
   0% {
     opacity: 0; }
@@ -148,23 +136,13 @@
   width: 100%;
   object-fit: cover; }
 
-.menuBox {
-  background-color: white;
-  padding: 1rem;
-  display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  max-width: 100%; }
-
 .menu {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
+  margin-top: -50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   background-color: #f6f6f6;
   position: relative; }
   .menu__header {
@@ -208,8 +186,7 @@
 
 .partMenu {
   max-width: 100%;
-  overflow: hidden;
-  padding: 0 1rem; }
+  padding: 10px; }
   .partMenu__title {
     text-transform: uppercase;
     position: relative;
@@ -217,24 +194,32 @@
     font-weight: 300; }
     .partMenu__title::after {
       content: "";
-      width: 3rem;
-      height: 0.25rem;
+      width: 49px;
+      height: 5px;
+      bottom: 0px;
+      left: 0px;
       background-color: #99E2D0;
-      position: absolute;
-      left: 0;
-      bottom: 0; }
+      position: absolute; }
 
 .menuBox {
-  animation: appear 1.5s; }
-
-.orderButtonDiv {
-  padding: 20px;
+  background-color: white;
   display: flex;
-  justify-content: center; }
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+  animation: appear 1.5s;
+  max-height: 90px;
+  box-shadow: 4px 4px 18px #0000002e;
+  margin-bottom: 16px; }
+  .menuBox:hover .menuBoxItem__confirmBox {
+    opacity: 1;
+    margin-right: 0px;
+    transition: all 1s ease; }
 
 .menuBoxItem {
   background-color: white;
-  padding: 1rem;
+  padding: 10px;
   display: flex;
   border-radius: 15px;
   margin: 10px;
@@ -246,26 +231,47 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    flex: 1; }
+    flex: 1;
+    padding: 15px; }
   .menuBoxItem__title {
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     font-weight: 700;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis; }
   .menuBoxItem__description {
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     font-weight: 300;
-    font-size: 14px; }
+    font-size: 14px;
+    text-overflow: ellipsis; }
   .menuBoxItem__price {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 10px;
+    padding: 10px;
     font-weight: 700;
     font-size: 16px; }
+  .menuBoxItem__confirmBox {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 70px;
+    margin-right: -70px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0; }
+
+.orderButtonDiv {
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
 
 .header {
   padding: 1rem;
