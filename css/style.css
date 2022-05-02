@@ -162,7 +162,8 @@
   align-items: center;
   justify-content: center;
   animation: load 5s;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  flex-direction: column; }
 
 .hideMeAfter5Seconds {
   animation: hideAnimation 0s ease-in 3s;
@@ -189,6 +190,11 @@
       animation-delay: 400ms; }
     .load__bar--3 {
       animation-delay: 600ms; }
+
+.loaderLabel {
+  font-family: "Shrikhand";
+  margin: 0;
+  text-align: center; }
 
 .header {
   align-items: center; }
@@ -379,7 +385,7 @@
   padding: 10px;
   box-shadow: 4px 4px 18px #0000002e; }
   .header__logo {
-    font-family: "Shrikhand", "cursive";
+    font-family: "Shrikhand";
     margin: 0;
     text-align: center; }
 

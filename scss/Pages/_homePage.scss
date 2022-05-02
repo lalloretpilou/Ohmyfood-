@@ -159,6 +159,7 @@
   justify-content: center;
   animation: load 5s;
   animation-fill-mode: both;
+  flex-direction: column;
 }
 
 .hideMeAfter5Seconds {
@@ -171,7 +172,6 @@
     width: $size*10;
     height: $size*7.5;
   }
-
   width: $size*4;
   height: $size*4;
   display: flex;
@@ -190,4 +190,9 @@
       }
     }
   }
+}
+.loaderLabel {
+  font-family: "Shrikhand";
+  margin: 0;
+  text-align: center;
 }
