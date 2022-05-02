@@ -139,16 +139,55 @@
     align-items: center;
     flex-direction: column;
   }
+
   .fonctionnement__box {
     width: 30%;
   }
 }
-/*
-.loadingSpinner {
-  height: 100vh;
-  width: 100vw;
-  background: rgba(255,255,255,0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+
+.loaderDiv {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $greenLight;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: load 5s;
+  animation-fill-mode: both;
+}
+
+.hideMeAfter5Seconds {
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+.load {
+  @media screen and (min-width: 768px) {
+    width: $size*10;
+    height: $size*7.5;
+  }
+
+  width: $size*4;
+  height: $size*4;
+  display: flex;
+  justify-content: space-evenly;
   z-index: 10;
-}*/
+
+  &__bar {
+    height: 100%;
+    width: $size;
+    animation: bars $anim-dur backwards 5;
+    animation-direction: alternate;
+
+    @for $i from 1 through 3 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+  }
+}
