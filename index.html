@@ -14,7 +14,7 @@
     content="Ohmyfood! débarque en France ! Découvrez sans plus attendre nos quatre premières grandes adresses Parisienne.">
   <meta property="og:site_name" content="https://lalloretpilou.github.io/Ohmyfood-.github.io/">
   <title>Ohmyfood! Paris</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="apple-touch-icon" href="assets/images/restaurants/appleLogo.png">
@@ -23,125 +23,137 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="header__logo">ohmyfood</h1>
-  </header>
-  <div class="locationBanner">
-    <i class="fas fa-map-marker-alt local__icon"></i>
-    <span class="locationBanner__text">Paris, Belleville</span>
-  </div>
-  <div class="FirstBanner">
-    <h2 class="FirstBanner__title">Réservez le menu qui<br>vous convient</h2>
-    <p class="FirstBanner__subtitle">
-      Découvrez des restaurants d'exception, séléctionnés par nos soins
-    </p>
-    <a class="homeButton" href="#restaurants">Explorer nos restaurants</a>
-  </div>
+  <div class="loadingSpinner">
+    <i class="fal-solid fa-loader"></i>
+    </div>
+    <header class="header">
+      <h1 class="header__logo">ohmyfood</h1>
+    </header>
+    <div class="locationBanner">
+      <i class="fas fa-map-marker-alt local__icon"></i>
+      <span class="locationBanner__text">Paris, Belleville</span>
+    </div>
+    <div class="FirstBanner">
+      <h2 class="FirstBanner__title">Réservez le menu qui<br>vous convient</h2>
+      <p class="FirstBanner__subtitle">
+        Découvrez des restaurants d'exception, séléctionnés par nos soins
+      </p>
+      <a class="homeButton" href="#restaurants">Explorer nos restaurants</a>
+    </div>
 
-  <div class="fonctionnementSection">
-    <h2 class="fonctionnement__title">Fonctionnement</h2>
-    <ul class="fonctionnementDivision">
-      <li class="fonctionnement__box">
-        <div class="fonctionnement__box__number"> 1 </div>
-        <i class="fonctionnement__box__icon fas fa-mobile-alt"></i>
-        <p>Choisissez un restaurant</p>
-      </li>
-      <li class="fonctionnement__box">
-        <div class="fonctionnement__box__number"> 2 </div>
-        <i class="fonctionnement__box__icon fas fa-list"></i>
-        <p>Composez votre menu</p>
-      </li>
-      <li class="fonctionnement__box">
-        <div class="fonctionnement__box__number"> 3 </div>
-        <i class="fonctionnement__box__icon fas fa-store"></i>
-        <p>Dégustez au restaurant</p>
-      </li>
-    </ul>
-  </div>
-
-  <section class="restaurants" id="restaurants">
-    <div class="restaurantsSection">
-      <h2 class="restaurants__title">Restaurants</h2>
-      <div class="cards">
-        <a class="card" href="La_palette_du_gout.html">
-          <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="card__img">
-          <span class="card__newBadge">Nouveau</span>
-          <section class="card__body">
-            <div class="card__labels">
-              <h3 class="card__title">La palette du goût</h3>
-              <span class="card__subtitle">Ménilmontant</span>
-            </div>
-            <label class="menu__btn card__likeButton custom-checkbox">
-              <input type="checkbox" />
-              <i class="far fa-heart fa-2x unchecked"></i>
-              <i class="fas fa-heart fa-2x fa-gradient checked"></i>
-            </label>
-          </section>
-        </a>
-        <a class="card" href="La_note_enchantee.html">
-          <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" class="card__img">
-          <span class="card__newBadge">Nouveau</span>
-          <section class="card__body">
-            <div class="card__labels">
-              <h3 class="card__title">La note enchantée</h3>
-              <span class="card__subtitle">Charonne</span>
-            </div>
-            <label class="menu__btn card__likeButton custom-checkbox">
-              <input type="checkbox" />
-              <i class="far fa-heart fa-2x unchecked"></i>
-              <i class="fas fa-heart fa-2x fa-gradient checked"></i>
-            </label>
-          </section>
-        </a>
-        <a class="card" href="A_la_francaise.html">
-          <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="card__img">
-          <section class="card__body">
-            <div class="card__labels">
-              <h3 class="card__title">À la française</h3>
-              <span class="card__subtitle">Cité Rouge</span>
-            </div>
-            <label class="menu__btn card__likeButton custom-checkbox">
-              <input type="checkbox" />
-              <i class="far fa-heart fa-2x unchecked"></i>
-              <i class="fas fa-heart fa-2x fa-gradient checked"></i>
-            </label>
-          </section>
-        </a>
-        <a class="card" href="Le_delice_des_sens.html">
-          <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt=""
-            class="card__img">
-          <section class="card__body">
-            <div class="card__labels">
-              <h3 class="card__title">Le délice des sens</h3>
-              <span class="card__subtitle">Folie-Méricourt</span>
-            </div>
-            <label class="menu__btn card__likeButton custom-checkbox">
-              <input type="checkbox" />
-              <i class="far fa-heart fa-2x unchecked"></i>
-              <i class="fas fa-heart fa-2x fa-gradient checked"></i>
-            </label>
-          </section>
-        </a>
-      </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footerDiv">
-      <span class="footer__logo">ohmyfood</span>
-      <ul class="footer__items">
-        <li class="footer__link">
-          <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
+    <div class="fonctionnementSection">
+      <h2 class="fonctionnement__title">Fonctionnement</h2>
+      <ul class="fonctionnementDivision">
+        <li class="fonctionnement__box">
+          <div class="fonctionnement__box__number"> 1 </div>
+          <i class="fonctionnement__box__icon fas fa-mobile-alt"></i>
+          <p>Choisissez un restaurant</p>
         </li>
-        <li class="footer__link">
-          <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+        <li class="fonctionnement__box">
+          <div class="fonctionnement__box__number"> 2 </div>
+          <i class="fonctionnement__box__icon fas fa-list"></i>
+          <p>Composez votre menu</p>
         </li>
-        <li class="footer__link">
-          <a class="footer__link" href="#">Mentions légales</a>
-        </li>
-        <li class="footer__link">
-          <a class="footer__link" href="mailto:Ohmyfood@Ohmyfood.com">Contact</a>
+        <li class="fonctionnement__box">
+          <div class="fonctionnement__box__number"> 3 </div>
+          <i class="fonctionnement__box__icon fas fa-store"></i>
+          <p>Dégustez au restaurant</p>
         </li>
       </ul>
     </div>
-  </footer>
+
+    <section class="restaurants" id="restaurants">
+      <div class="restaurantsSection">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <div class="cards">
+          <a class="card" href="La_palette_du_gout.html">
+            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="card__img">
+            <span class="card__newBadge">Nouveau</span>
+            <section class="card__body">
+              <div class="card__labels">
+                <h3 class="card__title">La palette du goût</h3>
+                <span class="card__subtitle">Ménilmontant</span>
+              </div>
+              <label class="menu__btn card__likeButton custom-checkbox">
+                <input type="checkbox" />
+                <i class="far fa-heart heart-1 fa-stack unchecked"></i>
+                <i class="fas fa-heart heart-1 fa-stack fa-gradient checked"></i>
+              </label>
+            </section>
+          </a>
+          <a class="card" href="La_note_enchantee.html">
+            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" class="card__img">
+            <span class="card__newBadge">Nouveau</span>
+            <section class="card__body">
+              <div class="card__labels">
+                <h3 class="card__title">La note enchantée</h3>
+                <span class="card__subtitle">Charonne</span>
+              </div>
+              <label class="menu__btn card__likeButton custom-checkbox">
+                <input type="checkbox" />
+                <i class="far fa-heart heart-1 fa-stack unchecked"></i>
+                <i class="fas fa-heart heart-1 fa-stack fa-gradient checked"></i>
+                <!--
+                <i class="far fa-heart fa-2x unchecked"></i>
+                <i class="fas fa-heart fa-2x fa-gradient checked"></i>-->
+              </label>
+            </section>
+          </a>
+          <a class="card" href="A_la_francaise.html">
+            <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="card__img">
+            <section class="card__body">
+              <div class="card__labels">
+                <h3 class="card__title">À la française</h3>
+                <span class="card__subtitle">Cité Rouge</span>
+              </div>
+              <label class="menu__btn card__likeButton custom-checkbox">
+                <input type="checkbox" />
+                <i class="far fa-heart heart-1 fa-stack unchecked"></i>
+                <i class="fas fa-heart heart-1 fa-stack fa-gradient checked"></i>
+                <!--
+                <i class="far fa-heart fa-2x unchecked"></i>
+                <i class="fas fa-heart fa-2x fa-gradient checked"></i>-->
+              </label>
+            </section>
+          </a>
+          <a class="card" href="Le_delice_des_sens.html">
+            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt=""
+              class="card__img">
+            <section class="card__body">
+              <div class="card__labels">
+                <h3 class="card__title">Le délice des sens</h3>
+                <span class="card__subtitle">Folie-Méricourt</span>
+              </div>
+              <label class="menu__btn card__likeButton custom-checkbox">
+                <input type="checkbox" />
+                <i class="far fa-heart heart-1 fa-stack unchecked"></i>
+                <i class="fas fa-heart heart-1 fa-stack fa-gradient checked"></i>
+                <!--
+                <i class="far fa-heart fa-2x unchecked"></i>
+                <i class="fas fa-heart fa-2x fa-gradient checked"></i>-->
+              </label>
+            </section>
+          </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerDiv">
+        <span class="footer__logo">ohmyfood</span>
+        <ul class="footer__items">
+          <li class="footer__link">
+            <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
+          </li>
+          <li class="footer__link">
+            <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+          </li>
+          <li class="footer__link">
+            <a class="footer__link" href="#">Mentions légales</a>
+          </li>
+          <li class="footer__link">
+            <a class="footer__link" href="mailto:Ohmyfood@Ohmyfood.com">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 </body>

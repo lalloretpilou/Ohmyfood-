@@ -19,16 +19,12 @@
   justify-content: center;
   padding: 25px;
   background-color: #EAEAEA;
-  font-size: 19px;
-  position: relative; }
+  font-size: 19px; }
   .locationBanner__text {
-    margin-left: 5px;
-    font-weight: 700; }
+    margin-left: 20px;
+    font-weight: 600; }
   .locationBanner__icon {
-    margin-right: 5px; }
-
-.loadPage {
-  animation: fill 2.5s; }
+    margin-right: 10px; }
 
 .FirstBanner {
   padding: 20px;
@@ -49,7 +45,7 @@
 .cards {
   display: flex;
   flex-direction: column; }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     .cards {
       flex-direction: row;
       flex-wrap: wrap;
@@ -68,7 +64,7 @@
   margin-bottom: 20px;
   box-shadow: 0 0 16px #0000002e;
   animation: appear 1.5s; }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     .card {
       width: 33%;
       flex-direction: column;
@@ -117,7 +113,7 @@
   margin-right: 15px;
   margin-left: -10px; }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .fonctionnementDivision {
     display: flex;
     align-items: center;
@@ -125,6 +121,15 @@
 
   .fonctionnement__box {
     width: 30%; } }
+/*
+.loadingSpinner {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}*/
 .header {
   align-items: center; }
   .header__arrow {
@@ -143,7 +148,7 @@
   max-height: 250px;
   width: 100%;
   object-fit: cover; }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     .imgCoverRestaurant {
       max-height: 450px; } }
 
@@ -211,7 +216,7 @@
       background-color: #99E2D0;
       position: absolute; }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .restaurantMenu {
     display: flex;
     flex-direction: row;
@@ -248,6 +253,9 @@
     opacity: 1;
     margin-right: 0px;
     transition-duration: 1s; }
+    .menuBox:hover .menuBoxItem__confirmBox .confirmIcon {
+      transition-duration: 1s;
+      transform: rotate(360deg); }
 
 .menuBoxItem {
   background-color: white;
@@ -299,12 +307,8 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     opacity: 0; }
-    .menuBoxItem__confirmBox:hover {
-      background-color: #008766; }
   .menuBoxItem__confirmIcon {
     margin-top: 5px; }
-    .menuBoxItem__confirmIcon:hover {
-      color: purple; }
 
 .orderButtonDiv {
   padding: 20px;
@@ -312,10 +316,8 @@
   justify-content: center; }
 
 .header {
-  padding: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 1000; }
+  padding: 10px;
+  box-shadow: 4px 4px 18px #0000002e; }
   .header__logo {
     font-family: "Shrikhand", "cursive";
     margin: 0;
@@ -364,10 +366,18 @@
   -webkit-background-clip: text;
   color: transparent; }
 
+.fa-gradient-black {
+  animation: fill 2s;
+  background: black;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
 .orderButton {
   display: block;
   text-align: center;
-  background-image: linear-gradient(325deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(360deg, #9356DC, #FF79DA);
   color: white;
   width: 200px;
   border-radius: 30px;
@@ -380,14 +390,13 @@
   transition-duration: 400ms; }
   .orderButton:hover {
     animation: invertFill 2s;
-    box-shadow: 3px 3px 18px #0000002e;
-    transform: scale(1.1); }
+    box-shadow: 3px 3px 18px #0000002e; }
 
 .homeButton {
   display: inline-block;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(325deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(360deg, #9356DC, #FF79DA);
   color: white;
   width: 200px;
   border-radius: 30px;
@@ -399,8 +408,7 @@
   transition-duration: 400ms; }
   .homeButton:hover {
     animation: invertFill 2s;
-    box-shadow: 3px 3px 18px #0000002e;
-    transform: scale(1.1); }
+    box-shadow: 3px 3px 18px #0000002e; }
 
 .fonctionnement {
   background-color: #f6f6f6; }

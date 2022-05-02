@@ -19,3 +19,11 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+.fa-gradient-black {
+  animation: fill 2s;
+	background: black;
+	-webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

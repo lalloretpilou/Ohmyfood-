@@ -4,20 +4,15 @@
   padding: 25px;
   background-color: $locationGreyBanner;
   font-size: 19px;
-  position: relative;
 
   &__text {
-    margin-left: 5px;
-    font-weight: 700;
+    margin-left: 20px;
+    font-weight: 600;
   }
 
   &__icon {
-    margin-right: 5px;
+    margin-right: 10px;
   }
-}
-
-.loadPage {
-  animation: fill 2.5s;
 }
 
 .FirstBanner {
@@ -48,7 +43,7 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -71,7 +66,7 @@
 
   animation: appear 1.5s;
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     width: 33%;
     flex-direction: column;
     flex-wrap: wrap;
@@ -138,7 +133,7 @@
   margin-left: -10px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .fonctionnementDivision {
     display: flex;
     align-items: center;
@@ -148,3 +143,12 @@
     width: 30%;
   }
 }
+/*
+.loadingSpinner {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}*/

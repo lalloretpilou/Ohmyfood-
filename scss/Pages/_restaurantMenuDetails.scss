@@ -20,7 +20,7 @@
   width: 100%;
   object-fit: cover;
   
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     max-height: 450px;
   }
 }
@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .restaurantMenu {
     display: flex;
     flex-direction: row;
@@ -155,6 +155,10 @@
     opacity: 1;
     margin-right: 0px;
     transition-duration: 1s;
+    .confirmIcon {
+      transition-duration: 1s;
+      transform: rotate(360deg);
+    }
   }
 }
 
@@ -217,15 +221,9 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     opacity: 0;
-    &:hover {
-      background-color: $greenLabel;
-    }
   }
   &__confirmIcon {
     margin-top: 5px;
-    &:hover {
-      color: purple;
-    }
   }
 }
 
