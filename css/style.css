@@ -161,7 +161,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: load 5s;
+  animation: load 3s;
   animation-fill-mode: both;
   flex-direction: column; }
 
@@ -170,26 +170,27 @@
   animation-fill-mode: forwards; }
 
 .load {
-  width: 12vh;
-  height: 12vh;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: space-evenly;
-  z-index: 10; }
+  z-index: 10;
+  margin-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .load {
-      width: 30vh;
-      height: 22.5vh; } }
+      width: 200px;
+      height: 150px; } }
   .load__bar {
     height: 100%;
-    width: 3vh;
-    animation: bars 1000ms backwards 5;
+    width: 20px;
+    animation: bars 1000ms backwards 3;
     animation-direction: alternate; }
     .load__bar--1 {
-      animation-delay: 200ms; }
+      animation-delay: 250ms; }
     .load__bar--2 {
-      animation-delay: 400ms; }
+      animation-delay: 500ms; }
     .load__bar--3 {
-      animation-delay: 600ms; }
+      animation-delay: 750ms; }
 
 .loaderLabel {
   font-family: "Shrikhand";
@@ -394,7 +395,7 @@
   .footer .footerDiv {
     display: flex;
     flex-direction: column;
-    padding: 25px; }
+    padding: 15px; }
   .footer__logo {
     color: white;
     font-family: "Shrikhand";
@@ -405,12 +406,11 @@
     width: 15px;
     margin-right: 10px; }
   .footer__items {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     list-style: none; }
   .footer__link {
-    margin: 10px; }
-  .footer__link {
+    padding-bottom: 10px;
     color: white;
     text-decoration: none; }
 

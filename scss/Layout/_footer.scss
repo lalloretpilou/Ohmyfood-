@@ -4,7 +4,7 @@
     .footerDiv {
         display: flex;
         flex-direction: column;
-        padding: 25px;
+        padding: 15px;
     }
 
     &__logo {
@@ -21,16 +21,13 @@
     }
 
     &__items {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
         list-style: none;
     }
 
     &__link {
-        margin: 10px;
-    }
-
-    &__link {
+        padding-bottom: 10px;
         color: white;
         text-decoration: none;
     }

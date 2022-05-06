@@ -12,9 +12,9 @@ $loaderBars: #f5edff;
 $loaderBars2: #FF79DA;
 $loaderBars3: #9356DC;
 
-$size: 3vh;
+$size: 20px;
 $anim-dur: 1000ms;
-$anim-delay: $anim-dur / 5;
+$anim-delay: $anim-dur / 4;
 
 @mixin gradient-color {
     background-image: linear-gradient(360deg, $purple, $rose);
