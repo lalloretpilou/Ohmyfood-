@@ -26,16 +26,14 @@
 
     <header class="menu__header">
       <h2 class="menu__title">À la française</h2>
-      <label class="menu__btn card__likeButton custom-checkbox">
-        <input type="checkbox" />
-        <i class="far fa-heart heart-1 fa-stack unchecked"></i>
-        <i class="fas fa-heart heart-1 fa-stack fa-gradient checked"></i>
-      </label>
+      <div>
+        <i class="likeButton far fa-heart"></i>
+      </div>
     </header>
 
     <section class="restaurantMenu">
 
-      <div class="partMenu">
+      <div class="partMenu appear delay1">
         <h3 class="partMenu__title">Entrées</h3>
 
         <div class="menuBox">
@@ -71,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="partMenu">
+      <div class="partMenu appear delay2">
         <h3 class="partMenu__title">Plats</h3>
 
         <div class="menuBox">
@@ -107,9 +105,7 @@
           </div>
         </div>
       </div>
-      </div>
-
-      <div class="partMenu">
+      <div class="partMenu appear delay3">
         <h3 class="partMenu__title">Desserts</h3>
 
         <div class="menuBox">
@@ -146,6 +142,7 @@
         </div>
       </div>
     </section>
+
     <div class="orderButtonDiv">
       <a class="orderButton" href="#">Commander</a>
     </div>

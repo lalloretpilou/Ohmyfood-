@@ -1,3 +1,54 @@
+.loaderDiv {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $greenLight;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: load 3s;
+  animation-fill-mode: both;
+  flex-direction: column;
+}
+
+.hideMeAfter5Seconds {
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+.load {
+  width: $size*4;
+  height: $size*4;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 10;
+  margin-bottom: 30px;
+
+  &__bar {
+    height: 100%;
+    width: $size;
+
+    animation: bars $anim-dur backwards 3;
+    animation-direction: alternate;
+
+    @for $i from 1 through 3 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+  }
+}
+
+.loaderLabel {
+  font-family: "Shrikhand";
+  margin: 0;
+  text-align: center;
+}
+
 .locationBanner {
   display: flex;
   justify-content: center;
@@ -137,61 +188,11 @@
   .fonctionnementDivision {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .fonctionnement__box {
     width: 30%;
   }
-}
-
-.loaderDiv {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: $greenLight;
-  position: fixed;
-  z-index: 1;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: load 3s;
-  animation-fill-mode: both;
-  flex-direction: column;
-}
-
-.hideMeAfter5Seconds {
-  animation: hideAnimation 0s ease-in 3s;
-  animation-fill-mode: forwards;
-}
-
-.load {
-  width: $size*4;
-  height: $size*4;
-  display: flex;
-  justify-content: space-evenly;
-  z-index: 10;
-  margin-bottom: 30px;
-
-  &__bar {
-    height: 100%;
-    width: $size;
-
-    animation: bars $anim-dur backwards 3;
-    animation-direction: alternate;
-
-    @for $i from 1 through 3 {
-      &--#{$i} {
-        animation-delay: $anim-delay * $i;
-      }
-    }
-  }
-}
-
-.loaderLabel {
-  font-family: "Shrikhand";
-  margin: 0;
-  text-align: center;
 }

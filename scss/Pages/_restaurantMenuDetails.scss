@@ -69,19 +69,6 @@
   }
 }
 
-.custom-checkbox input[type="checkbox"],
-.custom-checkbox .checked {
-  display: none;
-}
-
-.custom-checkbox input[type="checkbox"]:checked~.checked {
-  display: inline-block;
-}
-
-.custom-checkbox input[type="checkbox"]:checked~.unchecked {
-  display: none;
-}
-
 .restaurantMenu {
   display: flex;
   flex-direction: column;
@@ -119,7 +106,7 @@
   .partMenu {
     width: 30%;
     padding: 10px;
-    animation: appear 1.5s;
+    //animation: appear 1.5s;
   
     &__title {
       text-transform: uppercase;
